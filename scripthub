@@ -1,0 +1,296 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "🔥@tomatecomido🔫",
+   LoadingTitle = "🔫 Loading Scripts 💥",
+   LoadingSubtitle = "Customized by User",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil,
+      FileName = "CustomHub"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "BpxeNssu", -- Nuevo código de Discord
+      RememberJoins = true
+   },
+   KeySystem = false -- No se necesita el sistema de claves en este caso
+})
+
+-- Tab: Murder vs Sheriffs Duels
+local MurderTab = Window:CreateTab("Murder vs Sheriffs Duels 🗡️🔫", nil)
+MurderTab:CreateButton({
+   Name = "RubyHub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Deni210/murdersvssherrifsduels/main/rubyhub", true))()
+   end,
+})
+MurderTab:CreateButton({
+   Name = "Hitbox Expander",
+   Callback = function()
+      _G.HeadSize = 10
+      _G.Disabled = true
+
+      game:GetService('RunService').RenderStepped:connect(function()
+         if _G.Disabled then
+            for i, v in next, game:GetService('Players'):GetPlayers() do
+               if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+                  pcall(function()
+                     v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize, _G.HeadSize, _G.HeadSize)
+                     v.Character.HumanoidRootPart.Transparency = 0.7
+                     v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+                     v.Character.HumanoidRootPart.Material = "Neon"
+                     v.Character.HumanoidRootPart.CanCollide = false
+                  end)
+               end
+            end
+         end
+      end)
+   end,
+})
+
+-- Tab: Fisch Scripts
+local FischTab = Window:CreateTab("Fisch Scripts 🎮", nil)
+FischTab:CreateButton({
+   Name = "Fisch AutoFarm",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxscriptsdotnet/roblox-scripts/refs/heads/main/rblxscriptsnet%20fisch%20autofarm"))()
+   end,
+})
+FischTab:CreateButton({
+   Name = "Speed Hub X",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+   end,
+})
+FischTab:CreateButton({
+   Name = "PrestineHubV3.5",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/RSenix3/PrestineHub/refs/heads/main/PrestineHubV3.5"))()
+   end,
+})
+FischTab:CreateButton({
+   Name = "Project Spectrum",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/xZPUHigh/Project-Spectrum/main/Loader.lua"))()
+   end,
+})
+FischTab:CreateButton({
+   Name = "CBA17 Script",
+   Callback = function()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/cba17b913ee63c7bfdbb9301e2d87c8b.lua"))()
+   end,
+})
+FischTab:CreateButton({
+   Name = "Femboyware Fisch",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/kylosilly/femboyware/refs/heads/main/Fisch.lua"))()
+   end,
+})
+
+-- Tab: Bedwars
+local BedwarsTab = Window:CreateTab("Bedwars 🛏️⚔️", nil)
+BedwarsTab:CreateButton({
+   Name = "Tenacity Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/nexus4rbx/TenacityForRoblox/main/NewMainScript.lua", true))()
+   end,
+})
+BedwarsTab:CreateButton({
+   Name = "Old AlSploit",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/QP-Community/Roblox/main/OldAlSploit.lua"))()
+   end,
+})
+BedwarsTab:CreateButton({
+   Name = "Vape V4",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+   end,
+})
+BedwarsTab:CreateButton({
+   Name = "AlSploit Main",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/AlSploit/AlSploit/main/MainScript", true))()
+   end,
+})
+BedwarsTab:CreateButton({
+   Name = "Flame X V2",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/FlamingDrey/Flame-X-v2/main/Flame%20X%20Bedwars%20V2"))()
+   end,
+})
+BedwarsTab:CreateButton({
+   Name = "Aurora Loader",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/cocotv666/Aurora/refs/heads/main/Aurora_Loader'))()
+   end,
+})
+
+-- Tab: AdoptMe
+local AdoptMeTab = Window:CreateTab("AdoptMe 🐾", nil)
+AdoptMeTab:CreateButton({
+   Name = "IceHub Brookhaven",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+   end,
+})
+AdoptMeTab:CreateButton({
+   Name = "Ame",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/lf4d7/daphie/main/ame.lua"))()
+   end,
+})
+AdoptMeTab:CreateButton({
+   Name = "Antarctic Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/JusticeValley/Antarctic-Hub/main/New.lua", true))()
+   end,
+})
+AdoptMeTab:CreateButton({
+   Name = "Diamond AdoptMe",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/Diamond/main/AdoptMe"))()
+   end,
+})
+AdoptMeTab:CreateButton({
+   Name = "Blin Script",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/blin"))()
+   end,
+})
+AdoptMeTab:CreateButton({
+   Name = "Dekos AdoptMe Script",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Dekos-lgbty/adoptme/main/script"))()
+   end,
+})
+
+-- Tab: BladeBall
+local BladeBallTab = Window:CreateTab("BladeBall ⚔️", nil)
+BladeBallTab:CreateButton({
+   Name = "BladeBall Loader",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Augustzyzx/A-s-t-r-a-l/main/Loader_BladeBall.lua'))()
+   end,
+})
+BladeBallTab:CreateButton({
+   Name = "Venox Blade Ball V4",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Fsploit/venox-blade-ball-v1/main/K-A-T-S-U-S-F-S-P-L-O-I-T-I-S-A-F-U-R-R-Y%20MAIN%20V4"))()
+   end,
+})
+BladeBallTab:CreateButton({
+   Name = "Beta Test BladeBall",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/New-C4-Remote.lua/main/BetaTest/Bladeball15m.html"))()
+   end,
+})
+BladeBallTab:CreateButton({
+   Name = "Auto Parry Script",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
+   end,
+})
+BladeBallTab:CreateButton({
+   Name = "BladeBall Visualizer",
+   Callback = function()
+      loadstring(game:HttpGet("https://scriptblox.com/raw/UPD-Blade-Ball-op-autoparry-with-visualizer-8652"))()
+   end,
+})
+BladeBallTab:CreateButton({
+   Name = "BladeBall RV Parry",
+   Callback = function()
+      loadstring(game:HttpGet("https://scriptblox.com/raw/Blade-Ball-RV-Parry-12337"))()
+   end,
+})
+
+-- Tab: Pets Go 🐾
+local PetsGoTab = Window:CreateTab("Pets Go 🐾", nil)
+PetsGoTab:CreateButton({
+   Name = "Ninja Legends",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/Terror/main/Games/NinjaLegends.lua", true))()
+   end,
+})
+PetsGoTab:CreateButton({
+   Name = "Proxima Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+   end,
+})
+PetsGoTab:CreateButton({
+   Name = "Terror Ninja Legends",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Zepsyy2/asd/main/Ninja%20Legends.lua"))()
+   end,
+})
+PetsGoTab:CreateButton({
+   Name = "Proxima Ninja Legends",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/1"))()
+   end,
+})
+PetsGoTab:CreateButton({
+   Name = "Sigma Hub Ninja Legends",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Tropxzz/Terror/main/Games/NinjaLegends.lua", true))()
+   end,
+})
+
+-- Tab: BloxFruits 🍉
+local BloxFruitsTab = Window:CreateTab("BloxFruits 🍉", nil)
+BloxFruitsTab:CreateButton({
+   Name = "RedzHub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+   end,
+})
+BloxFruitsTab:CreateButton({
+   Name = "YMIE Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/NhiYeuAnh/YMIE-HUB/main/YMIEHUBV2.txt"))()
+   end,
+})
+BloxFruitsTab:CreateButton({
+   Name = "Winterhub V2",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Yuri/main/Winterhub_V2.lua"))()
+   end,
+})
+BloxFruitsTab:CreateButton({
+   Name = "MinGaming",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Basicallyybeta/mingane/main/MinGamingNew.lua"))()
+   end,
+})
+BloxFruitsTab:CreateButton({
+   Name = "HOHO Hub",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+   end,
+})
+BloxFruitsTab:CreateButton({
+   Name = "ChestFarm",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/QP-Community/Roblox/main/ChestFarmByTbao"))()
+   end,
+})
+BloxFruitsTab:CreateButton({
+   Name = "Speed Hub X",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))()
+   end,
+})
+BloxFruitsTab:CreateButton({
+   Name = "Script Auth",
+   Callback = function()
+      loadstring(game:HttpGetAsync("https://lua-library.btteam.net/script-auth.txt"))()
+   end,
+})
+BloxFruitsTab:CreateButton({
+   Name = "Solix Blox Fruits",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/debunked69/Solix-Blox-Fruits/main/Protected_9116683145502467.txt"))()
+   end,
+})
